@@ -1,0 +1,7 @@
+#!/bin/bash
+f=LHCb_UK_Meeting_Presentation_8th_January_2024
+if pdflatex $f.tex
+then
+  pdflatex $f.tex
+fi
+rm $f.{aux,log,nav,out,snm,toc,vrb}
