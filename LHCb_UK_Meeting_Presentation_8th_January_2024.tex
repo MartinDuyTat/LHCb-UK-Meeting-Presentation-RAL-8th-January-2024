@@ -431,6 +431,224 @@
   \end{figure}
 \end{frame}
 
+\begin{frame}{2022 test beam analysis}
+  \begin{center}
+    \Large{Let's look at hit maps of $\SI{3}{\giga\eV}$ pions...}
+  \end{center}
+  \begin{figure}
+    \centering
+    \begin{subfigure}{0.5\textwidth}
+      \includegraphics[width = 1.0\textwidth]{Figs/HitMap_Pos8_Pion_3GeV_Data.png}
+      \caption{Testbeam data}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+      \includegraphics[width = 1.0\textwidth]{Figs/HitMap_Pos8_Pion_3GeV_MC.png}
+      \caption{Geant4 simulation}
+    \end{subfigure}%
+  \end{figure}
+\end{frame}
+
+\begin{frame}{2022 test beam analysis}
+  \begin{center}
+    \Large{... and compare with hit maps of $\SI{3}{\giga\eV}$ protons}
+  \end{center}
+  \begin{figure}
+    \centering
+    \begin{subfigure}{0.5\textwidth}
+      \includegraphics[width = 1.0\textwidth]{Figs/HitMap_Pos8_Proton_3GeV_Data.png}
+      \caption{Testbeam data}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+      \includegraphics[width = 1.0\textwidth]{Figs/HitMap_Pos8_Proton_3GeV_MC.png}
+      \caption{Geant4 simulation}
+    \end{subfigure}%
+  \end{figure}
+\end{frame}
+
+\begin{frame}{2022 test beam analysis}
+  \begin{center}
+    \Large{Different y-position $\implies$ Separation in Cherenkov angle}
+  \end{center}
+  \begin{figure}
+    \centering
+    \begin{subfigure}{0.5\textwidth}
+      \includegraphics[width = 1.0\textwidth]{Figs/HitMap_Pos8_Pion_3GeV_Data.png}
+      \caption{Pions}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+      \includegraphics[width = 1.0\textwidth]{Figs/HitMap_Pos8_Proton_3GeV_Data.png}
+      \caption{Protons}
+    \end{subfigure}%
+  \end{figure}
+\end{frame}
+
+\begin{frame}{2022 test beam analysis}
+  \begin{center}
+    \Large{What about timing information? First look at $\SI{10}{\giga\eV}$ pions and protons}
+  \end{center}
+  \begin{figure}
+    \centering
+    \begin{subfigure}{0.5\textwidth}
+      \includegraphics[width = 1.0\textwidth]{Figs/Time_Pos8_Pion_10GeV_Data.png}
+      \caption{Pions}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+      \includegraphics[width = 1.0\textwidth]{Figs/Time_Pos8_Proton_10GeV_Data.png}
+      \caption{Protons}
+    \end{subfigure}%
+  \end{figure}
+  \begin{center}
+    Small ($\SI{0.15}{\nano\second}$) separation, as expected
+  \end{center}
+\end{frame}
+
+\begin{frame}{2022 test beam analysis}
+  \begin{center}
+    \Large{What about timing information? First look at $\SI{10}{\giga\eV}$ pions and protons}
+  \end{center}
+  \begin{figure}
+    \centering
+    \begin{subfigure}{0.5\textwidth}
+      \includegraphics[width = 1.0\textwidth]{Figs/Time_Pos8_Pion_10GeV_Data.png}
+      \caption{Pions}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+      \includegraphics[width = 1.0\textwidth]{Figs/Time_Pos8_Proton_10GeV_Data.png}
+      \caption{Protons}
+    \end{subfigure}%
+  \end{figure}
+  \begin{center}
+    Additional ``reflection'', which arrives $\sim\SI{1}{\nano\second}$ later, is currently under study\phantom{(}
+  \end{center}
+\end{frame}
+
+\begin{frame}{2022 test beam analysis}
+  \begin{center}
+    \Large{Then consider the $\SI{3}{\giga\eV}$ pions and protons, where a clear separation in arrival time is seen}
+  \end{center}
+  \begin{figure}
+    \centering
+    \begin{subfigure}{0.5\textwidth}
+      \includegraphics[width = 1.0\textwidth]{Figs/Time_Pos8_Pion_3GeV_Data.png}
+      \caption{Pions}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+      \includegraphics[width = 1.0\textwidth]{Figs/Time_Pos8_Proton_3GeV_Data.png}
+      \caption{Protons}
+    \end{subfigure}%
+  \end{figure}
+  \begin{center}
+    Additional reflection also arrives later for protons\phantom{(}
+  \end{center}
+\end{frame}
+
+\begin{frame}{PID algorithm}
+  \begin{itemize}
+    \setlength\itemsep{1.0em}
+    \item{Long term goal: Demonstrate separation between pions and protons using a PID algorithm}
+    \item{PID algorithm presented by \href{https://indico.cern.ch/event/1204659/timetable/\#21-wp3-torch-reconstruction}{Tom Jones} last year:}
+  \end{itemize}
+  \vspace{0.4cm}
+  \begin{equation*}
+    P(E_\gamma, \phi_c, t_0) = P(E_\gamma)\times P(\phi_c)\times P(t_0)
+  \end{equation*}
+  \begin{enumerate}
+    \setlength\itemsep{1.0em}
+    \item{$P(E_\gamma)$: Frank-Tamm distribution $\circledast$ Efficiency effects}
+    \item{$P(\phi_c)$: Uniform distribution}
+    \item{$P(t_0)$: Gaussian smearing due to electronics}
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}{PID algorithm}
+  \begin{itemize}
+    \setlength\itemsep{1.0em}
+    \item{Long term goal: Demonstrate separation between pions and protons using a PID algorithm}
+    \item{PID algorithm presented by \href{https://indico.cern.ch/event/1204659/timetable/\#21-wp3-torch-reconstruction}{Tom Jones} last year:}
+  \end{itemize}
+  \vspace{0.4cm}
+  \begin{equation*}
+    P(E_\gamma, \phi_c, t_0) = P(E_\gamma)\times P(\phi_c)\times P(t_0)
+  \end{equation*}
+  \begin{itemize}
+    \setlength\itemsep{1.0em}
+    \item{Convert $(E_\gamma, \phi_c)$ into detector hit position $(x, y)$ using Jacobian $J$}
+    \item{Each derivative in $J$ is calculated by forward-propagating two photons}
+  \end{itemize}
+  \vspace{0.4cm}
+  \begin{equation*}
+    P(x, y, t_0) = P(E_\gamma, \phi_c, t_0)/\lvert J\rvert
+  \end{equation*}
+  \vspace{-0.63cm}
+\end{frame}
+
+\section{Future plans}
+
+\begin{frame}{Future plans: Testbeam in 2025}
+  \begin{center}
+    {\Large 2025 testbeam}
+  \end{center}
+  \begin{itemize}
+    \setlength\itemsep{1.0em}
+    \item{The TORCH collaboration is planning on going back to T9 in early 2025 with a full-height prototype TORCH module, which is $\SI{2.5}{\meter}$ tall}
+    \item{Completely new mechanical support structure, which will be discussed by Adam in the next talk!}
+    \item{From our experience with the 2022 testbeam, we will be much better prepared for 2025:}
+    \begin{itemize}
+      \item{More efficient data collection}
+      \item{Better quality data}
+      \item{First demonstration with full-size prototype}
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Future plans: New electronics}
+  \begin{itemize}
+    \setlength\itemsep{1.0em}
+    \item{New TORCH electronics have been aquired and is under lab testing}
+    \begin{itemize}
+      \item{Only 2 sets available, which is insufficient for the next testbeam}
+    \end{itemize}
+    \item{FastIC chips will replace old NINO chips}
+    \begin{itemize}
+      \item{$\SI{250}{\nano\meter}\to\SI{65}{\nano\meter}$ CMOS technology}
+    \end{itemize}
+    \item{PicoTDC replace previous HPTDC chips}
+    \begin{itemize}
+      \item{Time binning is reduced from $\SI{100}{\pico\second}$ to $\SI{12}{\pico\second}$}
+    \end{itemize}
+  \end{itemize}
+  \begin{figure}
+    \centering
+    \includegraphics[width = 1.0\textwidth]{Figs/NewTORCHElectronics.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Future plans: New MCP-PMT tubes}
+  \begin{columns}
+    \begin{column}{0.6\textwidth}
+      \begin{itemize}
+        \setlength\itemsep{1.0em}
+        \item{Huge improvement in occupancy}
+        \item{Increase granularity from $8\times 64$ to $16\times 96$}
+        \item{Change from AC coupled to DC coupled anode}
+      \end{itemize}
+      \vspace{0.0cm}
+      \begin{figure}
+        \centering
+        \includegraphics[width = 0.7\textwidth]{Figs/NewMCPSizeComparison.png}
+      \end{figure}
+    \end{column}
+    \begin{column}{0.4\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width = 1.0\textwidth]{Figs/ACvsDCCoupledAnode.png}
+      \end{figure}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\section{Summary and future prospects}
+
 \begin{frame}{Summary and future prospects}
   \vspace{0.3cm}
   {\Large Summary:}
