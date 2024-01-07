@@ -77,13 +77,15 @@
 \institute[University of Oxford]{\normalsize LHCb-UK annual meeting, RAL}
 \date{8th-10th January 2024}
 
-\titlegraphic{\includegraphics[height = 1.3cm]{Logos/OxfordLogo.pdf}\hspace{0.5cm}~%
-              \includegraphics[height = 1.3cm]{Logos/Warwick_logo.png}\hspace{0.5cm}~%
-              \includegraphics[height = 1.3cm]{Logos/Edinburgh_logo.png}\hspace{0.5cm}~%
-              \includegraphics[height = 1.3cm]{Logos/Jozef_Stefan_Institute_logo.jpg}\hspace{0.5cm}~%
-              \includegraphics[height = 1.3cm]{Logos/Bristol_logo.jpg}\hspace{2.5cm}~%
-              \includegraphics[height = 1.3cm]{Logos/CERNLogo.png}\hspace{0.5cm}~%
-              \includegraphics[height = 1.3cm]{Logos/Photek_logo.jpg}\hspace{0.5cm}~%
+\titlegraphic{\includegraphics[height = 1.0cm]{Logos/Edinburgh_logo.png}\hspace{0.1cm}~%
+              \includegraphics[height = 1.0cm]{Logos/Monash_logo.png}\hspace{0.1cm}~%
+              \includegraphics[height = 1.3cm]{Logos/Bristol_logo.jpg}\hspace{0.1cm}~%
+              \includegraphics[height = 1.0cm]{Logos/Leicester_logo.jpg}\hspace{0.2cm}~%
+              \includegraphics[height = 1.3cm]{Logos/Jozef_Stefan_Institute_logo.jpg}\hspace{0.1cm}~%
+              \includegraphics[height = 1.3cm]{Logos/OxfordLogo.pdf}\hspace{0.1cm}~%
+              \includegraphics[height = 1.3cm]{Logos/Warwick_logo.png}\hspace{0.1cm}~%
+              \includegraphics[height = 1.3cm]{Logos/CERNLogo.png}\hspace{0.1cm}~%
+              \includegraphics[height = 1.3cm]{Logos/Photek_logo.jpg}\hspace{0.1cm}~%
               \includegraphics[height = 1.3cm]{Logos/lhcb.jpg}}
 
 \begin{document}
@@ -105,12 +107,12 @@
   \end{center}
   \begin{itemize}
     \setlength\itemsep{0.3em}
-    \item{Particle identification at LHCb at low momentum ($2$-$\SI{20}{\giga\eV}$)}
+    \item{Particle identification at LHCb at low momentum ($2$-$\SI{20}{\giga\eV/c}$)}
     \item{Ensure full coverage of LHCb's flavour physics programme}
     \begin{enumerate}
       \setlength\itemsep{0.3em}
       \item{Boost signal efficiencies and suppress mis-ID backgrounds}
-      \item{Improve flavour tagging efficiency by $25$-$50\%$}
+      \item{Improve flavour tagging efficiency}
     \end{enumerate}
   \end{itemize}
   \begin{figure}
@@ -152,11 +154,11 @@
 \section{TORCH working principle}
 \begin{frame}{TORCH working principle}
   \begin{columns}
-    \begin{column}{0.55\textwidth}
+    \begin{column}{0.60\textwidth}
       \begin{enumerate}
-        \setlength\itemsep{1.5em}
-        \item{Charged particle enter quartz}
-        \item{Cherenkov photons emitted}
+        \setlength\itemsep{1.0em}
+        \item{Charged particle enters quartz}
+        \item{Cherenkov photons promptly emitted}
         \item{Photons undergo internal reflection until they reach the top of the plate}
       \end{enumerate}
       \begin{figure}
@@ -164,7 +166,7 @@
         \includegraphics[width = 0.8\textwidth]{Figs/RadiatorPlate_lab.png}
       \end{figure}
     \end{column}
-    \begin{column}{0.45\textwidth}
+    \begin{column}{0.40\textwidth}
       \begin{figure}
         \centering
         \includegraphics[width = 1.0\textwidth]{Figs/TORCH_FrontView.png}
@@ -199,16 +201,16 @@
   \end{columns}
 \end{frame}
 
-\section{2018 test beam analysis}
-\begin{frame}{2018 test beam analysis}
+\section{Test beam analysis}
+\begin{frame}{Test beam setup}
   \vspace{0.0cm}
   \begin{center}
-    {\large 2018 test beam analysis paper \href{https://www.sciencedirect.com/science/article/pii/S0168900223001717}{published} earlier this year}
-  \end{center}
+    {\large Investigate TORCH performance with testbeam campaigns}
+  \end{center}  
   \begin{itemize}
     \setlength\itemsep{0.3em}
-    \item{$\SI{8}{\giga\eV}$ beam of pions and protons from the CERN T9 beamline}
-    \item{Single-photon resolution down to $\SI{70}{\pico\second}$ achieved}
+    \item{Beam of pions and protons from the CERN T9 beamline}
+    \item{Similar test beam area in 2018 and 2022 testbeams}
   \end{itemize}
   \begin{figure}
     \centering
@@ -216,7 +218,7 @@
   \end{figure}
 \end{frame}
 
-\begin{frame}{2018 test beam analysis}
+\begin{frame}{Reminder of Proto-TORCH}
   \begin{columns}
     \begin{column}{0.6\textwidth}
       \begin{itemize}
@@ -227,22 +229,33 @@
       \end{itemize}
       \begin{figure}
         \centering
-        \includegraphics[width = 0.7\textwidth,trim={0 7.5cm 0 0},clip=true]{Figs/TORCH_testbeam_2018_structure.jpg}
+        \begin{overpic}[percent,width=0.7\textwidth,trim={0 7.5cm 0 0},clip=true]{Figs/TORCH_testbeam_2018_structure.jpg}
+          \put(10,-10){\vector(1.0,1.5){20}}
+          \put(-5,-20){Half height quartz radiator plate}
+        \end{overpic}
       \end{figure}
     \end{column}
     \begin{column}{0.4\textwidth}
       \begin{figure}
         \centering
-        \includegraphics[width = 0.9\textwidth,trim={4.5cm 0.5cm 0 5cm},clip=true]{Figs/TORCH_testbeam_2018_structure.jpg}
+        \begin{overpic}[percent,width=0.9\textwidth,trim={4.5cm 0.5cm 0 5cm},clip=true]{Figs/TORCH_testbeam_2018_structure.jpg}
+          \put(-10,100){\vector(1.0,-0.5){30}}
+          \put(-50,100){Focusing block}
+          \put(30,102){\vector(0.3,-1.0){10}}
+          \put(10,105){MCPs and electronics}
+        \end{overpic}
       \end{figure}
     \end{column}
   \end{columns}
 \end{frame}
 
-\begin{frame}{2018 test beam analysis}
+\begin{frame}{Reminder of Photek MCP-PMT}
   \begin{itemize}
-    \setlength\itemsep{1.0em}
+    \setlength\itemsep{0.7em}
     \item{Photon detector: MicroChannel Plate PhotoMultiplier Tube}
+    \begin{itemize}
+      \item[-]{T.M. Conneely \textit{et al} 2016 \textit{JINST} \textbf{10} C05003}
+    \end{itemize}
     \item{$53\times 53\si{\milli\meter\squared}$ active area}
     \item{$8$ columns, each with $64$ pixels}
     \item{Effectively $128$ pixels with charge sharing}
@@ -253,39 +266,16 @@
   \end{figure}
 \end{frame}
 
-\begin{frame}{2018 test beam analysis}
+\begin{frame}{Reminder of 2018 test beam analysis}
+  \vspace{0.0cm}
+  \begin{center}
+    {\large 2018 test beam analysis paper recently published:\\}
+    {\small \href{https://www.sciencedirect.com/science/article/pii/S0168900223001717}{Nucl. Instrum. Methods \textbf{A1050} (2023)}}
+  \end{center}
   \begin{itemize}
     \setlength\itemsep{1.0em}
-    \item{Photon detector: MicroChannel Plate PhotoMultiplier Tube}
-    \item{$53\times 53\si{\milli\meter\squared}$ active area}
-    \item{$8$ columns, each with $64$ pixels}
-    \item{Effectively $128$ pixels with charge sharing}
-  \end{itemize}
-  \vspace{-0.35cm}
-  \begin{figure}
-    \centering
-    \includegraphics[width = 0.8\textwidth]{Figs/MCP_PMT_illustration.png}
-  \end{figure}
-\end{frame}
-
-\begin{frame}{2018 test beam analysis}
-  \begin{itemize}
-    \setlength\itemsep{1.0em}
-    \item{NINO: Amplifier and discriminator}
-    \item{High Performance Time to Digital Converter: $\SI{100}{\pico\second}$ bins}
-    \item{Legacy electronics that will be replaced, more on this later!}
-  \end{itemize}
-  \begin{figure}
-    \centering
-    \includegraphics[width = 1.0\textwidth,trim={0 0.3cm 0 4.2cm},clip=true]{Figs/TORCH_testbeam_2018_electronics.jpg}
-  \end{figure}
-\end{frame}
-
-\begin{frame}{2018 test beam analysis}
-  \begin{itemize}
-    \setlength\itemsep{1.0em}
-    \item{Time resolution down to $\SI{70}{\pico\second}$}
-    \item{Worse resolution for tracks entering at the bottom}
+    \item{Single-photon time resolution down to $\SI{70}{\pico\second}$ achieved}
+    \item{Degraded resolution for tracks entering at the bottom, as expected}
     \begin{itemize}
       \item{Uncertainty in chromatic dispersion scales with photon path length}
       \item{Improvements expected with further electronics calibrations}
@@ -306,8 +296,8 @@
   \begin{enumerate}
     \setlength\itemsep{1.0em}
     \item{Additional, fully instrumented, MCP-PMT tubes (7 in total)}
-    \item{Wide range of beam momenta ($3$, $5$, $8$, $\SI{10}{\giga\eV}$ and higher)}
-    \item{First demonstration of PID separation in TORCH}
+    \item{Wide range of beam momenta ($3$, $5$, $8$, $\SI{10}{\giga\eV/c}$ and higher)}
+    \item{Aim to achieve a first demonstration of PID separation in TORCH}
   \end{enumerate}
   \begin{figure}
     \centering
@@ -318,14 +308,18 @@
 \begin{frame}{2022 test beam analysis}
   \vspace{0.0cm}
   \begin{center}
-    {\large Global hit map looks very encouraging!}
+    {\large Global hit map looks as expected}
   \end{center}
   \begin{enumerate}
-    \setlength\itemsep{1.0em}
+    \setlength\itemsep{0.5em}
     \item{Hit pattern seen across 6 MCP-PMT tubes}
-    \item{Minimal degradation of original MCP A and B}
+    \begin{itemize}
+      \item{Original MCP B is fully efficient, while MCP A shows some degradation}
+    \end{itemize}
+    \item{Hit pattern shows some inefficient MCPs and miscalibrated electronics}
     \item{Proper time reference channel present in (almost) all columns}
   \end{enumerate}
+  \vspace{0.01cm}
   \begin{figure}
     \centering
     \includegraphics[width = 0.6\textwidth]{Figs/GlobalHitMap_Run480.pdf}
@@ -335,18 +329,20 @@
 \begin{frame}{2022 test beam analysis}
   \vspace{0.0cm}
   \begin{center}
-    {\large Additional MCP tubes work well, but focus on MCP A and B for now}
+    {\large Focus on MCP A and B for now}
   \end{center}
   \vspace{0.1cm}
   \begin{enumerate}
-    \setlength\itemsep{1.0em}
-    \item{Electronics of new MCPs need to be understood better}
+    \setlength\itemsep{0.0em}
+    \item{Some non-uniformity in QE and gain seen in MCP C, D and F}
+    \item{Electronics and new MCPs need to be understood better}
     \begin{itemize}
       \item{Improve stability and reliability}
       \item{NINO thresholds need to be optimised}
+      \item{Boards C-F are under calibration using a test system at Bristol}
     \end{itemize}
-    \item{Some non-uniformity in QE and gain seen in MCP C, D and F}
   \end{enumerate}
+  \vspace{-0.04cm}
   \begin{figure}
     \centering
     \includegraphics[width = 0.6\textwidth]{Figs/GlobalHitMap_Run480.pdf}
@@ -386,32 +382,20 @@
 \begin{frame}{2022 test beam analysis}
   \vspace{0.0cm}
   \begin{center}
-    {\large Check time of flight between time references}\\
-    {\normalsize Expected time difference at $\SI{10}{\giga\eV}$: $\SI{0.15}{\nano\second}$}
+    {\large Check time of flight between external time references}\\
+    {\normalsize Expected time difference at $\SI{3}{\giga\eV/c}$: $\SI{1.6}{\nano\second}$}
   \end{center}
   \begin{figure}
     \centering
-    \includegraphics[width = 0.7\textwidth]{Figs/PionProton_TimeDiff_10GeV.pdf}
+    \includegraphics[width = 0.7\textwidth]{Figs/PionProton_TimeDiff_3GeV.pdf}
   \end{figure}
 \end{frame}
 
 \begin{frame}{2022 test beam analysis}
   \vspace{0.0cm}
   \begin{center}
-    {\large Check time of flight between time references}\\
-    {\normalsize Expected time difference at $\SI{8}{\giga\eV}$: $\SI{0.23}{\nano\second}$}
-  \end{center}
-  \begin{figure}
-    \centering
-    \includegraphics[width = 0.7\textwidth]{Figs/PionProton_TimeDiff_8GeV.pdf}
-  \end{figure}
-\end{frame}
-
-\begin{frame}{2022 test beam analysis}
-  \vspace{0.0cm}
-  \begin{center}
-    {\large Check time of flight between time references}\\
-    {\normalsize Expected time difference at $\SI{5}{\giga\eV}$: $\SI{0.59}{\nano\second}$}
+    {\large Check time of flight between external time references}\\
+    {\normalsize Expected time difference at $\SI{5}{\giga\eV/c}$: $\SI{0.59}{\nano\second}$}
   \end{center}
   \begin{figure}
     \centering
@@ -422,18 +406,30 @@
 \begin{frame}{2022 test beam analysis}
   \vspace{0.0cm}
   \begin{center}
-    {\large Check time of flight between time references}\\
-    {\normalsize Expected time difference at $\SI{3}{\giga\eV}$: $\SI{1.6}{\nano\second}$}
+    {\large Check time of flight between external time references}\\
+    {\normalsize Expected time difference at $\SI{8}{\giga\eV/c}$: $\SI{0.23}{\nano\second}$}
   \end{center}
   \begin{figure}
     \centering
-    \includegraphics[width = 0.7\textwidth]{Figs/PionProton_TimeDiff_3GeV.pdf}
+    \includegraphics[width = 0.7\textwidth]{Figs/PionProton_TimeDiff_8GeV.pdf}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{2022 test beam analysis}
+  \vspace{0.0cm}
+  \begin{center}
+    {\large Check time of flight between external time references}\\
+    {\normalsize Expected time difference at $\SI{10}{\giga\eV/c}$: $\SI{0.15}{\nano\second}$}
+  \end{center}
+  \begin{figure}
+    \centering
+    \includegraphics[width = 0.7\textwidth]{Figs/PionProton_TimeDiff_10GeV.pdf}
   \end{figure}
 \end{frame}
 
 \begin{frame}{2022 test beam analysis}
   \begin{center}
-    \Large{Let's look at hit maps of $\SI{3}{\giga\eV}$ pions...}
+    \Large{Let's look at hit maps of $\SI{3}{\giga\eV/c}$ pions...}
   \end{center}
   \begin{figure}
     \centering
@@ -450,7 +446,7 @@
 
 \begin{frame}{2022 test beam analysis}
   \begin{center}
-    \Large{... and compare with hit maps of $\SI{3}{\giga\eV}$ protons}
+    \Large{... and compare with hit maps of $\SI{3}{\giga\eV/c}$ protons}
   \end{center}
   \begin{figure}
     \centering
@@ -484,7 +480,7 @@
 
 \begin{frame}{2022 test beam analysis}
   \begin{center}
-    \Large{What about timing information? First look at $\SI{10}{\giga\eV}$ pions and protons}
+    \Large{What about timing information? First look at $\SI{10}{\giga\eV/c}$ pions and protons}
   \end{center}
   \begin{figure}
     \centering
@@ -524,7 +520,7 @@
 
 \begin{frame}{2022 test beam analysis}
   \begin{center}
-    \Large{Then consider the $\SI{3}{\giga\eV}$ pions and protons, where a clear separation in arrival time is seen}
+    \Large{Then consider the $\SI{3}{\giga\eV/c}$ pions and protons, where a clear separation in arrival time is seen}
   \end{center}
   \begin{figure}
     \centering
@@ -556,7 +552,7 @@
     \setlength\itemsep{1.0em}
     \item{$P(E_\gamma)$: Frank-Tamm distribution $\circledast$ Efficiency effects}
     \item{$P(\phi_c)$: Uniform distribution}
-    \item{$P(t_0)$: Gaussian smearing due to electronics}
+    \item{$P(t_0)$: Gaussian smearing due to electronics and photon reconstruction (pixel size and emission point assumptions)}
   \end{enumerate}
 \end{frame}
 
@@ -570,10 +566,12 @@
   \begin{equation*}
     P(E_\gamma, \phi_c, t_0) = P(E_\gamma)\times P(\phi_c)\times P(t_0)
   \end{equation*}
+  \vspace{-0.39cm}
   \begin{itemize}
     \setlength\itemsep{1.0em}
     \item{Convert $(E_\gamma, \phi_c)$ into detector hit position $(x, y)$ using Jacobian $J$}
     \item{Each derivative in $J$ is calculated by forward-propagating two photons}
+    \item{Integrate over each pixel using 2D trapezium rule}
   \end{itemize}
   \vspace{0.4cm}
   \begin{equation*}
@@ -590,7 +588,7 @@
   \end{center}
   \begin{itemize}
     \setlength\itemsep{1.0em}
-    \item{The TORCH collaboration is planning on going back to T9 in early 2025 with a full-height prototype TORCH module, which is $\SI{2.5}{\meter}$ tall}
+    \item{The TORCH collaboration is planning on going back to T9 in early 2025 with a $\SI{2.5}{\meter}$ length prototype TORCH module}
     \item{Completely new mechanical support structure, which will be discussed by Adam in the next talk!}
     \item{From our experience with the 2022 testbeam, we will be much better prepared for 2025:}
     \begin{itemize}
@@ -603,10 +601,11 @@
 
 \begin{frame}{Future plans: New electronics}
   \begin{itemize}
-    \setlength\itemsep{1.0em}
-    \item{New TORCH electronics have been aquired and is under lab testing}
+    \setlength\itemsep{0.7em}
+    \item{New electronics: FastIC $+$ PicoTDC $+$ lpGBT developed by RICH}
     \begin{itemize}
       \item{Only 2 sets available, which is insufficient for the next testbeam}
+      \item{Expected delivery at beginning of 2024}
     \end{itemize}
     \item{FastIC chips will replace old NINO chips}
     \begin{itemize}
@@ -614,8 +613,10 @@
     \end{itemize}
     \item{PicoTDC replace previous HPTDC chips}
     \begin{itemize}
-      \item{Time binning is reduced from $\SI{100}{\pico\second}$ to $\SI{12}{\pico\second}$}
+      \item{Time binning is improved from $\SI{100}{\pico\second}$ to $\SI{12}{\pico\second}$}
+      \item{In the longer term, plan to use the FastRICH chip}
     \end{itemize}
+    \item{Testing with RICH carrier board and TORCH specific adaptor board}
   \end{itemize}
   \begin{figure}
     \centering
@@ -625,26 +626,64 @@
 
 \begin{frame}{Future plans: New MCP-PMT tubes}
   \begin{columns}
-    \begin{column}{0.6\textwidth}
+    \begin{column}{0.58\textwidth}
       \begin{itemize}
         \setlength\itemsep{1.0em}
-        \item{Huge improvement in occupancy}
-        \item{Increase granularity from $8\times 64$ to $16\times 96$}
-        \item{Change from AC coupled to DC coupled anode}
+        \item{Working with commerical partner, Photek Ltd, to develop MCP-PMTs suitable for HL-LHC}
+        \item{From FTDR studies, we know centre module occupancy must be improved}
+        \item{Increase granularity: $8\times 64\to 16\times 96$}
+        \item{AC coupled $\to$ DC coupled anode}
       \end{itemize}
       \vspace{0.0cm}
       \begin{figure}
         \centering
-        \includegraphics[width = 0.7\textwidth]{Figs/NewMCPSizeComparison.png}
+        \includegraphics[width = 0.68\textwidth]{Figs/NewMCPSizeComparison.png}
       \end{figure}
     \end{column}
-    \begin{column}{0.4\textwidth}
+    \begin{column}{0.42\textwidth}
       \begin{figure}
         \centering
-        \includegraphics[width = 1.0\textwidth]{Figs/ACvsDCCoupledAnode.png}
+        \includegraphics[width = 0.9\textwidth]{Figs/ACvsDCCoupledAnode.png}
       \end{figure}
     \end{column}
   \end{columns}
+\end{frame}
+
+\begin{frame}{Future plans: New MCP-PMT tubes}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}
+        \setlength\itemsep{1.0em}
+        \item{New MCP-PMT has a ceramic anode with vias to route the signal to connectors on the back}
+        \item{Connectors will be soldered with laser-jet soldering:}
+        \begin{itemize}
+          \item{Required by the density of the readout}
+          \item{Needed to avoid heating the tube}
+        \end{itemize}
+        \item{Expect delivery at end of February}
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width = 0.9\textwidth]{Figs/NewMCPFrontBack.png}
+      \end{figure}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Future plans: Lab testing of new MCP-PMT tubes}
+  \begin{figure}
+    \centering
+    \includegraphics[width = 0.95\textwidth]{Figs/WarwickLabSetup.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Future plans: Lab testing of new MCP-PMT tubes}
+  \begin{figure}
+    \centering
+    \includegraphics[width = 0.95\textwidth]{Figs/WarwickLabSetupPhotos.png}
+  \end{figure}
 \end{frame}
 
 \section{Summary and future prospects}
@@ -655,16 +694,18 @@
   \vspace{0.5cm}
   \begin{enumerate}
     \setlength\itemsep{1.5em}
-    \item{Test beam analysis progressing well, with promising results}
+    \item{Test beam analysis progressing well}
     \begin{itemize}
       \item{Hit patterns well understood}
       \item{More detailed analysis of time information ongoing}
+      \item{Improved calibration is essential}
     \end{itemize}
-    \item{We have aquired new electronics and new MCP-PMTs}
+    \item{We are acquiring new electronics and new MCP-PMTs}
     \begin{itemize}
-      \item{Lab testing ongoing}
+      \item{Lab testing of electronics ongoing}
       \item{New electronics will replace legacy NINOs and HPTDCs}
       \item{New MCP-MPTs have higher spatial resolution}
+      \item{Delivery of new MCP-PMT tubes expected at the end of February}
     \end{itemize}
   \end{enumerate}
 \end{frame}
@@ -691,6 +732,46 @@
   \begin{center}
     {\huge Thanks for your attention!}
   \end{center}
+\end{frame}
+
+\begin{frame}{Backup slides}
+  \begin{center}
+    {\huge Backup slides}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Backup: Reminder of Photek MCP-PMT}
+  \begin{itemize}
+    \setlength\itemsep{0.7em}
+    \item{Photon detector: MicroChannel Plate PhotoMultiplier Tube}
+    \begin{itemize}
+      \item[-]{T.M. Conneely \textit{et al} 2016 \textit{JINST} \textbf{10} C05003}
+    \end{itemize}
+    \item{$53\times 53\si{\milli\meter\squared}$ active area}
+    \item{$8$ columns, each with $64$ pixels}
+    \item{Effectively $128$ pixels with charge sharing}
+  \end{itemize}
+  \vspace{-0.35cm}
+  \begin{figure}
+    \centering
+    \includegraphics[width = 0.8\textwidth]{Figs/MCP_PMT_illustration.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Backup: TORCH electronics}
+  \begin{itemize}
+    \setlength\itemsep{0.7em}
+    \item{NINO: Amplifier and discriminator}
+    \begin{itemize}
+      \item[-]{R. Gao \textit{et al} 2022 \textit{JINST} \textbf{17} C05015}
+    \end{itemize}
+    \item{High Performance Time to Digital Converter: $\SI{100}{\pico\second}$ bins}
+    \item{Legacy electronics that will be replaced, more on this later!}
+  \end{itemize}
+  \begin{figure}
+    \centering
+    \includegraphics[width = 1.0\textwidth,trim={0 0.3cm 0 4.2cm},clip=true]{Figs/TORCH_testbeam_2018_electronics.jpg}
+  \end{figure}
 \end{frame}
 
 \end{document}
